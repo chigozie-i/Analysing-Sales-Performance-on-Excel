@@ -204,7 +204,8 @@ It is essential to emphasize that Imaginary Inc. is a fictitious entity, and the
 
 It's important to recognize that this analysis seeks to offer a broad, high-level understanding of the methodology employed for sales analysis. It's vital to acknowledge that each business operates within its unique context and circumstances, thereby necessitating tailored approaches.
 
-If you are interested in exploring the data, Download the provided Excel workbook from the repository.
+To explore the data- 
+[Bicycle Dataset](https://hasobuk-my.sharepoint.com/:x:/r/personal/chigozie_hasob_co_uk/_layouts/15/doc2.aspx?sourcedoc=%7BD41B5CBA-0F91-4396-B354-0E6FBA6D86A1%7D&file=Bicycle%20Dataset.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&ct=1692543025602&wdOrigin=OFFICECOM-WEB.MAIN.EDGEWORTH&cid=1738c0f8-1773-428c-a901-5537965c1304&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=09480754-aa97-402a-b418-e0efd25a2dd2)
 
 
 
