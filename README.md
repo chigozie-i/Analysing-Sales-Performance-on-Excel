@@ -89,7 +89,7 @@ To initiate this process, I opted to eliminate gridlines from the worksheets. Th
 
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2003.png)
 
-#### Analysis of Overall Sales Performance:
+1. #### Analysis of Overall Sales Performance:
 To gain insights into the trajectory of business growth, I extracted data pertaining to the overall sales performance across the reviewed years. Stakeholders can utilize this perspective to formulate growth strategies, considering broader macroeconomic and economic factors that influence the business landscape.
 To accomplish this, within the 'Dashboard_Input' Sheet, I established a data model displaying the cumulative sales revenue over the specified period. This involved creating two columns: 'Year' and 'Total Revenue'. By employing the following Excel functions, I sourced information from the 'Bicycle_Sales' dataset to populate this table.
 
@@ -103,7 +103,7 @@ For the 'Total Revenue' Column:
 
 Using this data model as a foundation, I generated a line chart illustrating the sales trend, which was subsequently incorporated into the dashboard visualization.
 
-#### Evaluation of Sales Performance by Region:
+2. #### Evaluation of Sales Performance by Region:
 I assessed sales performance categorized by region, with the intent of aiding stakeholders in identifying regions that exhibit strong performance as well as those that warrant greater attention. Armed with this insightful analysis, Imaginary Inc. gains the ability to strategically allocate resources, refine marketing approaches, or concentrate growth efforts in specific regions.
 To realize this objective, I formulated a dynamic data model within the 'Dashboard_Input' Sheet, showcasing cumulative sales revenue for each distinct location. This entailed establishing two columns: 'Country' and 'Revenue'. Additionally, I generated a list to facilitate year-specific visualizations.
 Through the utilization of the following Excel functions, I sourced data from the 'Bicycle_Sales' dataset to populate the designated table:
@@ -121,7 +121,7 @@ For the 'Revenue' Column:
 
 Leveraging this structured data model, I created an interactive column chart that graphically represents the sales trends for each region. This chart serves as a valuable addition to the dashboard visualization.
 
-#### Analysis of Product Sales:
+3. #### Analysis of Product Sales:
 
 To facilitate decision-making rooted in product performance, a thorough Product Sales Analysis was conducted. This analysis aimed to scrutinize sales across diverse product categories, spanning various regions and periods. This analytical insight empowers stakeholders to discern the most favoured products, enabling them to strategically fine-tune inventory management and optimize marketing endeavours.
 To execute this endeavour, pertinent fields were extracted from the Bicycle_Sales dataset through the application of Excel functions. This methodology was adopted to ensure sustained connectivity and interdependencies, thereby fostering the creation of an interactive dashboard characterized by real-time updates and heightened visibility.
@@ -138,7 +138,7 @@ Furthermore, the SUMIFS function was leveraged to obtain sales revenue, adhering
 
 This analysis culminated in the creation of an interactive doughnut chart that provides an illustrative overview of performance across distinct product categories by year and region.
 
-#### Analysis of Age Groups:
+4. #### Analysis of Age Groups:
 
 The Age Group Analysis deconstructs sales data according to different age categories, serving the purpose of comprehending the target demographic. This breakdown aids in the customization of marketing initiatives and product offerings, specifically catering to distinct age ranges. The insights gleaned from this analysis equip stakeholders to make informed decisions, encompassing aspects such as product design and strategies for engaging with customers.
 
@@ -154,7 +154,7 @@ In addition, the SUMIFS function was employed to extract sales revenue, with con
 
 To provide a graphical representation of revenue per age group, an interactive bar chart was generated, contributing to a comprehensive understanding of age-related sales patterns.
 
- #### Exploration of Price Points:
+5. #### Exploration of Price Points:
 
 The Price Point Analysis delves into sales from the perspective of different price ranges. By gaining insights into the price intervals that yield the highest sales and revenue, stakeholders acquire the capability to formulate judicious decisions about pricing strategies, potentially including the introduction of premium models.
 
