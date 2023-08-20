@@ -17,8 +17,11 @@ When sales data is analyzed, we harness the power of data to drive growth, innov
 
 ## Project Overview
 The essence of this project is to show insights that can be drawn from a sales dataset to help address business concerns. In this project, I analyzed the sales data of a bicycle store using Microsoft Excel. 
-Let’s call the store **Imaginary Inc.
+
+Let’s call the store "Imaginary Inc."
+
 The data set analyzed contains 113,037 rows of transactions carried out over 6-years across six countries.
+
 #### Business Concerns:
 The management of Imaginary Inc would like to allocate resources to support marketing efforts and improve revenue properly. They must understand their target demographic and tailor their marketing campaign and product offering accordingly.
 They would also like to make informed data-driven decisions about what to stock, what to discontinue, inventory allocation, what to discount, product design, and the introduction of premium models.
