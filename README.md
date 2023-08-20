@@ -170,7 +170,7 @@ The outcomes of the sales performance analysis were consolidated into a dashboar
 
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2009.png)
 
-## CONCLUSION
+## Conclusion
 
 During this project, a comprehensive analysis of various dimensions of sales performance within Imaginary Inc. was conducted. The insights garnered from the analysis shed light on critical aspects of the business, empowering stakeholders to make informed decisions and formulate strategic plans. Each analysis provided unique perspectives, contributing to a well-rounded understanding of the company's operations.
 
@@ -183,7 +183,7 @@ Price point analysis illuminated sales patterns across different price ranges, f
 This understanding aids in maximizing revenue and catering to varying customer segments.
 The breakdown of sales by age group enabled a grasp of the target demographic, thereby refining marketing campaigns and product offerings to cater to specific age ranges.
 
-## RECOMMENDATION
+## Recommendation
 
 Based on the findings of the analyses, several recommendations can be offered to enhance Imaginary Inc.'s operations and growth:
 1. **Strategic Growth Planning:** Utilize the insights from the overall sales performance analysis to formulate data-driven growth plans, accounting for historical trends and external economic factors.
@@ -194,7 +194,7 @@ Based on the findings of the analyses, several recommendations can be offered to
 6. **Continual Monitoring:** Establish a system for ongoing data analysis and visualization, fostering real-time decision-making and adaptability to market changes.
 Incorporating these recommendations into Imaginary Inc.'s business strategy will harness the power of data-driven insights, leading to improved operational efficiency, enhanced customer satisfaction, and sustained growth in a competitive market landscape.
 
-## DISCLAIMER
+## Disclaimer
 The information and insights provided within this project are based solely on the dataset used. The assumptions are aligned with typical business objectives. This analysis offers a broad overview of my proficiency in conducting analytical procedures on data. It's important to note that Imaginary Inc. is a fictitious entity. This project exemplifies the potential application of data analysis in assessing sales performance. This analysis is intended to provide a high-level understanding of the methodology used for sales analysis, recognizing that individual business circumstances vary.
 
 
