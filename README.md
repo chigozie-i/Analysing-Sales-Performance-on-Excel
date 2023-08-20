@@ -13,7 +13,7 @@ When sales data is analyzed, we harness the power of data to drive growth, innov
 - [Key Steps](#key-steps)
 - [Conclusion](#conclusion)
 - [Recommendation](#recommendation)
-- [Disclaimer](#disclaimer)
+- [Closing Statement](#closing-statement)
 
 ## Project Overview
 The essence of this project is to show insights that can be drawn from a sales dataset to help address business concerns. In this project, I analyzed the sales data of a bicycle store using Microsoft Excel. 
@@ -194,7 +194,7 @@ Based on the findings of the analyses, several recommendations can be offered to
 6. **Continual Monitoring:** Establish a system for ongoing data analysis and visualization, fostering real-time decision-making and adaptability to market changes.
 Incorporating these recommendations into Imaginary Inc.'s business strategy will harness the power of data-driven insights, leading to improved operational efficiency, enhanced customer satisfaction, and sustained growth in a competitive market landscape.
 
-## Disclaimer
-The information and insights provided within this project are based solely on the dataset used. The assumptions are aligned with typical business objectives. This analysis offers a broad overview of my proficiency in conducting analytical procedures on data. It's important to note that Imaginary Inc. is a fictitious entity. This project exemplifies the potential application of data analysis in assessing sales performance. This analysis is intended to provide a high-level understanding of the methodology used for sales analysis, recognizing that individual business circumstances vary.
+## Closing Statement
+The information and insights provided within this project are based solely on the dataset used. The assumptions are aligned with typical business objectives. This project seeks to give a glimpse into my proficiency in conducting analytical procedures on data. It is important to note that Imaginary Inc. is a fictitious entity. This project exemplifies the potential application of data analysis in assessing sales performance. This analysis is intended to provide a high-level understanding of the methodology used for sales analysis, recognizing that individual business circumstances vary.
 
 
