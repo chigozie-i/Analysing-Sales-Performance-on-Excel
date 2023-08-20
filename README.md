@@ -79,7 +79,7 @@ These measures encompass:
 
 These calculated measures collectively contribute to an enhanced understanding of the data, enabling deeper insights into various operational areas and aiding decision-making processes.
 
-## ANALYSIS & VISUALIZATION
+#### Analysis and Visualization:
 During the analysis and visualization stage, I introduced two supplementary worksheets within the Bicycle Dataset workbook and assigned the titles 'Dashboard_Input' and 'Dashboard' accordingly.
 The 'Dashboard_Input' sheet incorporates dataset abstractions targeting predefined areas of concern, catering to the analytical process. The visualizations generated will subsequently be replicated onto the 'Dashboard' sheet. This integration of datasets fosters the development of an interactive dashboard.
 To initiate this process, I opted to eliminate gridlines from the worksheets. This was undertaken with the intention of enhancing visual clarity and aesthetics, creating a more user-friendly interface. This was achieved by navigating to the Worksheet menu, selecting View, and then deselecting the Gridlines option.
