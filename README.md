@@ -1,4 +1,4 @@
-![Sales Performance Analysis](Hero_IMG.png)
+![Sales Performance Analysis]([Hero_IMG.png](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/Hero%20IMG.png))
 
 ## Introduction
 
