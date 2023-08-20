@@ -69,13 +69,16 @@ Subsequently, to comprehensively address all raised concerns:
 Calculation of measures was undertaken. These measures serve to provide insights into sales-related considerations spanning various aspects, including products, regions, market segments, and trend identification, and offer guidance for decisions involving inventory allocation and marketing strategies.
 These measures encompass:
 1. **Generated Revenue:** A 'Revenue' column was introduced, and revenue calculations were performed by multiplying the values in the 'Order_Quantity' column with those in the 'Unit_Price' column:
-   =[@[Order_Quantity]]*[@[Unit_Price]]
 
-2. **Cost of Products Sold:** A new 'Total_Cost' column was generated, and the computation of product costs for ordered items was carried out by multiplying the values in the 'Order_Quantity' column with those in the 'Unit_Cost' column:
-   =[@[Order_Quantity]]*[@[Unit_Cost]]
+    =[@[Order_Quantity]]*[@[Unit_Price]]
 
-3. **Profit:** A 'Profit' column was introduced, and the profit values were derived by subtracting the 'Total_Cost' column values from the 'Revenue' column values:
-   =[@Revenue]-[@[Total_Cost]]
+3. **Cost of Products Sold:** A new 'Total_Cost' column was generated, and the computation of product costs for ordered items was carried out by multiplying the values in the 'Order_Quantity' column with those in the 'Unit_Cost' column:
+
+    =[@[Order_Quantity]]*[@[Unit_Cost]]
+
+5. **Profit:** A 'Profit' column was introduced, and the profit values were derived by subtracting the 'Total_Cost' column values from the 'Revenue' column values:
+
+    =[@Revenue]-[@[Total_Cost]]
 
 These calculated measures collectively contribute to an enhanced understanding of the data, enabling deeper insights into various operational areas and aiding decision-making processes.
 
@@ -89,10 +92,15 @@ To initiate this process, I opted to eliminate gridlines from the worksheets. Th
 #### Analysis of Overall Sales Performance:
 To gain insights into the trajectory of business growth, I extracted data pertaining to the overall sales performance across the reviewed years. Stakeholders can utilize this perspective to formulate growth strategies, considering broader macroeconomic and economic factors that influence the business landscape.
 To accomplish this, within the 'Dashboard_Input' Sheet, I established a data model displaying the cumulative sales revenue over the specified period. This involved creating two columns: 'Year' and 'Total Revenue'. By employing the following Excel functions, I sourced information from the 'Bicycle_Sales' dataset to populate this table.
+
 For the 'Year' Column:
+
 =SORT(UNIQUE(Bike_Sales[Year]))
+
 For the 'Total Revenue' Column:
+
 =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Year],Dashboard_Input!B5)
+
 Using this data model as a foundation, I generated a line chart illustrating the sales trend, which was subsequently incorporated into the dashboard visualization.
 
 #### Evaluation of Sales Performance by Region:
@@ -101,8 +109,11 @@ To realize this objective, I formulated a dynamic data model within the 'Dashboa
 Through the utilization of the following Excel functions, I sourced data from the 'Bicycle_Sales' dataset to populate the designated table:
 
 For the 'Country' Column:
+
 =SORT(UNIQUE(Bike_Sales[Country]))
+
 For the 'Revenue' Column:
+
 =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Country],Dashboard_Input!F7, Bike_Sales[Year],Dashboard_Input!$G$4)
 
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2004.png) 
@@ -118,9 +129,13 @@ To execute this endeavour, pertinent fields were extracted from the Bicycle_Sale
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2006.png)
 
 For populating the designated table, the 'Product_Category' field was populated with unique and sorted data using the following Excel function:
+
 =SORT(UNIQUE(Bike_Sales[Product_Category]))
+
 Furthermore, the SUMIFS function was leveraged to obtain sales revenue, adhering to specific criteria encompassing year, country, and product category:
+
 =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Product_Category],Dashboard_Input!J9,Bike_Sales[Country],Dashboard_Input!$K$6,Bike_Sales[Year],Dashboard_Input!$K$4)
+
 This analysis culminated in the creation of an interactive doughnut chart that provides an illustrative overview of performance across distinct product categories by year and region.
 
 #### Analysis of Age Groups:
@@ -130,16 +145,23 @@ The Age Group Analysis deconstructs sales data according to different age catego
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2007.png)
 
 To compile the designated table, the 'Age Category' field was populated with unique data via the utilization of Excel functions:
+
 =UNIQUE(Bike_Sales[Age_Group])
+
 In addition, the SUMIFS function was employed to extract sales revenue, with consideration for defined criteria:
+
 =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Age_Group],Dashboard_Input!B23,Bike_Sales[Year],Dashboard_Input!$C$20)
+
 To provide a graphical representation of revenue per age group, an interactive bar chart was generated, contributing to a comprehensive understanding of age-related sales patterns.
 
  #### Exploration of Price Points:
 
 The Price Point Analysis delves into sales from the perspective of different price ranges. By gaining insights into the price intervals that yield the highest sales and revenue, stakeholders acquire the capability to formulate judicious decisions about pricing strategies, potentially including the introduction of premium models.
+
 For the execution of this analysis, a column dedicated to price ranges was introduced, utilizing the Unit Price column as a reference point. The creation of these price ranges was achieved through the implementation of the Excel IF function:
+
 =IF(O3 <= 10, "0-10", IF(O3 <= 50, "11-50", IF(O3 <= 100, "51-100", IF(O3 <= 200, "101-200", IF(O3 <= 500, "201-500", IF(O3 <= 1000, "501-1000", IF(O3 <= 2000, "1001-2000", IF(O3 <= 3000, "2001-3000", "3000+"))))))))
+
 To populate the data model table, I harnessed the UNIQUE and SUMIFS functions. The data generated through these processes served as the foundation for the creation of a funnel chart, facilitating a visual representation of the analysis outcomes.
 
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2008.png)
@@ -151,10 +173,14 @@ The outcomes of the sales performance analysis were consolidated into a dashboar
 ## CONCLUSION
 
 During this project, a comprehensive analysis of various dimensions of sales performance within Imaginary Inc. was conducted. The insights garnered from the analysis shed light on critical aspects of the business, empowering stakeholders to make informed decisions and formulate strategic plans. Each analysis provided unique perspectives, contributing to a well-rounded understanding of the company's operations.
+
 The evaluation of overall sales performance unveiled the trajectory of business growth over the past years. This historical context, combined with considerations of economic and macroeconomic influences, offers a solid foundation for future growth strategies.
 Sales performance by region offered valuable insights into regional strengths and areas warranting attention. This knowledge equips Imaginary Inc. with the ability to allocate resources effectively, design targeted marketing campaigns, and optimize regional growth efforts.
+
 The analysis of product sales provided a deeper understanding of product popularity across regions and periods. This information is pivotal for product design enhancements and customer engagement strategies, ensuring the alignment of offerings with customer preferences.
-Price point analysis illuminated sales patterns across different price ranges, facilitating pricing strategies and the potential introduction of premium models. This understanding aids in maximizing revenue and catering to varying customer segments.
+Price point analysis illuminated sales patterns across different price ranges, facilitating pricing strategies and the potential introduction of premium models. 
+
+This understanding aids in maximizing revenue and catering to varying customer segments.
 The breakdown of sales by age group enabled a grasp of the target demographic, thereby refining marketing campaigns and product offerings to cater to specific age ranges.
 
 ## RECOMMENDATION
@@ -169,6 +195,6 @@ Based on the findings of the analyses, several recommendations can be offered to
 Incorporating these recommendations into Imaginary Inc.'s business strategy will harness the power of data-driven insights, leading to improved operational efficiency, enhanced customer satisfaction, and sustained growth in a competitive market landscape.
 
 ## DISCLAIMER
-The information and insights provided within this analysis report are derived from the dataset used. The assumptions are aligned with typical business objectives. This analysis offers a broad overview of my proficiency in conducting analytical procedures on data. It's important to note that Imaginary Inc. is a fictitious entity, and the dataset employed is openly accessible and associated with the fictional context of Imaginary Inc. This project exemplifies the potential application of sales data analysis in assessing performance. This analysis provides a high-level understanding of the methodology for sales analysis, recognizing that individual business circumstances may vary.
+The information and insights provided within this project are based solely on the dataset used. The assumptions are aligned with typical business objectives. This analysis offers a broad overview of my proficiency in conducting analytical procedures on data. It's important to note that Imaginary Inc. is a fictitious entity. This project exemplifies the potential application of data analysis in assessing sales performance. This analysis is intended to provide a high-level understanding of the methodology used for sales analysis, recognizing that individual business circumstances vary.
 
 
