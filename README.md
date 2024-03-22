@@ -73,15 +73,15 @@ Calculation of measures was undertaken. These measures serve to provide insights
 These measures encompass:
 1. **Generated Revenue:** A 'Revenue' column was introduced, and revenue calculations were performed by multiplying the values in the 'Order_Quantity' column with those in the 'Unit_Price' column:
 
-  `=[@[Order_Quantity]]*[@[Unit_Price]]`
+  ` =[@[Order_Quantity]]*[@[Unit_Price]] `
 
 3. **Cost of Products Sold:** A new 'Total_Cost' column was generated, and the computation of product costs for ordered items was carried out by multiplying the values in the 'Order_Quantity' column with those in the 'Unit_Cost' column:
 
-    `=[@[Order_Quantity]]*[@[Unit_Cost]]`
+    ` =[@[Order_Quantity]]*[@[Unit_Cost]] `
 
 5. **Profit:** A 'Profit' column was introduced, and the profit values were derived by subtracting the 'Total_Cost' column values from the 'Revenue' column values:
 
-    `=[@Revenue]-[@[Total_Cost]]`
+    ` =[@Revenue]-[@[Total_Cost]] `
 
 These calculated measures collectively contribute to an enhanced understanding of the data, enabling deeper insights into various operational areas and aiding decision-making processes.
 
@@ -96,13 +96,13 @@ To initiate this process, I opted to eliminate gridlines from the worksheets. Th
 To gain insights into the trajectory of business growth, I extracted data pertaining to the overall sales performance across the reviewed years. Stakeholders can utilize this perspective to formulate growth strategies, considering broader macroeconomic and economic factors that influence the business landscape.
 To accomplish this, within the 'Dashboard_Input' Sheet, I established a data model displaying the cumulative sales revenue over the specified period. This involved creating two columns: 'Year' and 'Total Revenue'. By employing the following Excel functions, I sourced information from the 'Bicycle_Sales' dataset to populate this table.
 
-`For the 'Year' Column:
+For the 'Year' Column:
 
-=SORT(UNIQUE(Bike_Sales[Year]))`
+` =SORT(UNIQUE(Bike_Sales[Year])) `
 
 For the 'Total Revenue' Column:
 
-=SUMIFS(Bike_Sales[Revenue],Bike_Sales[Year],Dashboard_Input!B5)
+` =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Year],Dashboard_Input!B5) `
 
 Using this data model as a foundation, I generated a line chart illustrating the sales trend, which was subsequently incorporated into the dashboard visualization.
 
@@ -113,11 +113,11 @@ Through the utilization of the following Excel functions, I sourced data from th
 
 For the 'Country' Column:
 
-=SORT(UNIQUE(Bike_Sales[Country]))
+` =SORT(UNIQUE(Bike_Sales[Country])) `
 
 For the 'Revenue' Column:
 
-=SUMIFS(Bike_Sales[Revenue],Bike_Sales[Country],Dashboard_Input!F7, Bike_Sales[Year],Dashboard_Input!$G$4)
+` =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Country],Dashboard_Input!F7, Bike_Sales[Year],Dashboard_Input!$G$4) `
 
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2004.png) 
 ![ ](https://github.com/chigozie-i/Excel-Sales-Performance-Analysis/blob/main/SP%20IMG%2005.png)
@@ -133,11 +133,11 @@ To execute this endeavour, pertinent fields were extracted from the Bicycle_Sale
 
 For populating the designated table, the 'Product_Category' field was populated with unique and sorted data using the following Excel function:
 
-=SORT(UNIQUE(Bike_Sales[Product_Category]))
+` =SORT(UNIQUE(Bike_Sales[Product_Category])) `
 
 Furthermore, the SUMIFS function was leveraged to obtain sales revenue, adhering to specific criteria encompassing year, country, and product category:
 
-=SUMIFS(Bike_Sales[Revenue],Bike_Sales[Product_Category],Dashboard_Input!J9,Bike_Sales[Country],Dashboard_Input!$K$6,Bike_Sales[Year],Dashboard_Input!$K$4)
+` =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Product_Category],Dashboard_Input!J9,Bike_Sales[Country],Dashboard_Input!$K$6,Bike_Sales[Year],Dashboard_Input!$K$4) `
 
 This analysis culminated in the creation of an interactive doughnut chart that provides an illustrative overview of performance across distinct product categories by year and region.
 
@@ -149,11 +149,11 @@ The Age Group Analysis deconstructs sales data according to different age catego
 
 To compile the designated table, the 'Age Category' field was populated with unique data via the utilization of Excel functions:
 
-=UNIQUE(Bike_Sales[Age_Group])
+` =UNIQUE(Bike_Sales[Age_Group]) `
 
 In addition, the SUMIFS function was employed to extract sales revenue, with consideration for defined criteria:
 
-=SUMIFS(Bike_Sales[Revenue],Bike_Sales[Age_Group],Dashboard_Input!B23,Bike_Sales[Year],Dashboard_Input!$C$20)
+` =SUMIFS(Bike_Sales[Revenue],Bike_Sales[Age_Group],Dashboard_Input!B23,Bike_Sales[Year],Dashboard_Input!$C$20) `
 
 To provide a graphical representation of revenue per age group, an interactive bar chart was generated, contributing to a comprehensive understanding of age-related sales patterns.
 
@@ -163,7 +163,7 @@ The Price Point Analysis delves into sales from the perspective of different pri
 
 For the execution of this analysis, a column dedicated to price ranges was introduced, utilizing the Unit Price column as a reference point. The creation of these price ranges was achieved through the implementation of the Excel IF function:
 
-=IF(O3 <= 10, "0-10", IF(O3 <= 50, "11-50", IF(O3 <= 100, "51-100", IF(O3 <= 200, "101-200", IF(O3 <= 500, "201-500", IF(O3 <= 1000, "501-1000", IF(O3 <= 2000, "1001-2000", IF(O3 <= 3000, "2001-3000", "3000+"))))))))
+` =IF(O3 <= 10, "0-10", IF(O3 <= 50, "11-50", IF(O3 <= 100, "51-100", IF(O3 <= 200, "101-200", IF(O3 <= 500, "201-500", IF(O3 <= 1000, "501-1000", IF(O3 <= 2000, "1001-2000", IF(O3 <= 3000, "2001-3000", "3000+")))))))) `
 
 To populate the data model table, I harnessed the UNIQUE and SUMIFS functions. The data generated through these processes served as the foundation for the creation of a funnel chart, facilitating a visual representation of the analysis outcomes.
 
