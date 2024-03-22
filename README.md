@@ -73,15 +73,15 @@ Calculation of measures was undertaken. These measures serve to provide insights
 These measures encompass:
 1. **Generated Revenue:** A 'Revenue' column was introduced, and revenue calculations were performed by multiplying the values in the 'Order_Quantity' column with those in the 'Unit_Price' column:
 
-    =[@[Order_Quantity]]*[@[Unit_Price]]
+  `=[@[Order_Quantity]]*[@[Unit_Price]]`
 
 3. **Cost of Products Sold:** A new 'Total_Cost' column was generated, and the computation of product costs for ordered items was carried out by multiplying the values in the 'Order_Quantity' column with those in the 'Unit_Cost' column:
 
-    =[@[Order_Quantity]]*[@[Unit_Cost]]
+    `=[@[Order_Quantity]]*[@[Unit_Cost]]`
 
 5. **Profit:** A 'Profit' column was introduced, and the profit values were derived by subtracting the 'Total_Cost' column values from the 'Revenue' column values:
 
-    =[@Revenue]-[@[Total_Cost]]
+    `=[@Revenue]-[@[Total_Cost]]`
 
 These calculated measures collectively contribute to an enhanced understanding of the data, enabling deeper insights into various operational areas and aiding decision-making processes.
 
@@ -96,9 +96,9 @@ To initiate this process, I opted to eliminate gridlines from the worksheets. Th
 To gain insights into the trajectory of business growth, I extracted data pertaining to the overall sales performance across the reviewed years. Stakeholders can utilize this perspective to formulate growth strategies, considering broader macroeconomic and economic factors that influence the business landscape.
 To accomplish this, within the 'Dashboard_Input' Sheet, I established a data model displaying the cumulative sales revenue over the specified period. This involved creating two columns: 'Year' and 'Total Revenue'. By employing the following Excel functions, I sourced information from the 'Bicycle_Sales' dataset to populate this table.
 
-For the 'Year' Column:
+`For the 'Year' Column:
 
-=SORT(UNIQUE(Bike_Sales[Year]))
+=SORT(UNIQUE(Bike_Sales[Year]))`
 
 For the 'Total Revenue' Column:
 
